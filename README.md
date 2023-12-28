@@ -4,7 +4,7 @@
 A basic Go implementation of a Rest Api
 
 
-## Hexagonal
+## hexagonal
 A basic Go implmentation of a Rest Api refactored using Hexagonal Architecture principles
 
 ### Resources
