@@ -3,6 +3,7 @@ package app
 import (
 	"database/sql"
 	"hexagonal/internal/core/domain"
+	ports "hexagonal/internal/core/ports/repository"
 	"log"
 
 	"github.com/pkg/errors"
@@ -16,10 +17,10 @@ var (
 )
 
 type Service struct {
-	db *sql.DB
+	db ports.Database
 }
 
-func NewService(database *sql.DB) *Service {
+func NewService(database ports.Database) *Service {
 	return &Service{
 		db: database,
 	}

@@ -12,3 +12,10 @@ type Repository interface {
 	CreateTable()
 	CheckIfExist(string) bool
 }
+
+type SvcRepository interface {
+	GetAllBooks()
+	InsertBook()
+	GetBookById()
+	DeleteBook()
+}
