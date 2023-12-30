@@ -5,6 +5,7 @@ import (
 	"hexagonal/internal/core/app"
 	"hexagonal/internal/core/postgres"
 	"net/http"
+	"log"
 )
 
 func main() {
@@ -17,5 +18,6 @@ func main() {
 	http.HandleFunc("/book/del", handlers.DeleteBook)
 	http.HandleFunc("/book/add", handlers.AddBook)
 	//http.HandleFunc("/jwt", handlers.GetJwt)
+	log.Fatal(http.ListenAndServe(":3000", nil))
 
 }

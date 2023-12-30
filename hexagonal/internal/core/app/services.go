@@ -6,6 +6,7 @@ import (
 	"log"
 
 	"github.com/pkg/errors"
+	_ "github.com/lib/pq"
 )
 
 var (
