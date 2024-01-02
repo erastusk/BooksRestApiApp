@@ -27,7 +27,6 @@ func NewService(database *sql.DB) *Service {
 }
 func (s *Service) InsertBook(b domain.Request) {
 	if s.CheckIfExist(b.Name) {
-		// fmt.Printf("Book: %s exists\n", b.Name)
 		return
 	}
 	ins := `

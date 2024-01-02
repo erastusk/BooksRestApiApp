@@ -1,4 +1,4 @@
-# Sample Basic Rest API
+# Basic Rest API
 
 ## basic
 A basic Go implementation of a Rest Api

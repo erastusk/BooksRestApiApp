@@ -1,0 +1,7 @@
+Hexagonal Architecture
+
+
+Adapters - Initiate communication between external and core
+Core - Business Logic
+    Ports - Interfaces
+    Services - Implementation of Ports Interfaces.
